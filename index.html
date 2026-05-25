@@ -17,23 +17,32 @@
       color: white;
       text-align: center;
     }
-
-    header {
-      padding: 25px 0 10px 0;
+    .club-name {
+        text-align: center;
+        margin-top: 10px;
+        font-family: Arial, sans-serif;
+        font-weight: 700;
+        line-height: 1.1;
+        color: white;
     }
 
-    header img {
-      width: 35vw;
-      max-width: 200px;
-      min-width: 120px;
-      height: auto;
+    .club-name .linea1 {
+        font-size: 22px;
+        letter-spacing: 1px;
     }
 
-    header h1 {
-      margin: 10px 0 0 0;
-      font-size: 1.4em;
-      font-weight: 700;
-      letter-spacing: 1px;
+    .club-name .linea2 {
+        font-size: 26px;
+        letter-spacing: 1px;
+    }
+
+    .club-name .subrayado {
+        margin: 8px auto 0 auto;
+        width: 140px;
+        height: 2px;
+        background-color: white;
+        border-radius: 2px;
+    }
     }
 
     .menu {
@@ -92,7 +101,12 @@
 
   <header>
     <img src="logo.png" alt="Logo Club Deportivo La Magdalena">
-    <h1>CLUB DEPORTIVO LA MAGDALENA</h1>
+   <div class="club-name">
+    <span class="linea1">CLUB DEPORTIVO</span><br>
+    <span class="linea2">LA MAGDALENA</span>
+    <div class="subrayado"></div>
+</div>
+
   </header>
 
   <div class="menu">
