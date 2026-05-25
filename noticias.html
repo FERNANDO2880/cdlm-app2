@@ -1,22 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Noticias CDLM</title>
+
 <style>
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .contenedor {
+        margin-top: 80px;
+        padding: 20px;
+    }
+
+    h1 {
+        color: #003366;
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    button {
+        background: #003366;
+        color: white;
+        padding: 15px 25px;
+        border: none;
+        border-radius: 8px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #0055aa;
+    }
 </style>
 </head>
+
 <body>
-<iframe src="https://sites.google.com/view/aplicacioncdlm/inicio?pli=1&authuser=0"></iframe>
+
+<div class="contenedor">
+    <h1>Noticias del Club</h1>
+    <p>Pulsa el botón para entrar a la página de Noticias.</p>
+
+    <button onclick="window.location.href='https://sites.google.com/view/aplicacioncdlm/inicio?pli=1&authuser=0'">
+        Entrar a Noticias
+    </button>
+</div>
+
 </body>
 </html>
