@@ -1,0 +1,17 @@
+{
+  "name": "Club Deportivo La Magdalena",
+  "short_name": "CD La Magdalena",
+  "description": "Aplicación oficial del Club Deportivo La Magdalena",
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f36c21",
+  "theme_color": "#f36c21",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

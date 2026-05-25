@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Deportivo La Magdalena</title>
+
+  <!-- Manifest para PWA -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Estilos -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f36c21;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 25px 0 10px 0;
+    }
+
+    header img {
+      width: 35vw;
+      max-width: 200px;
+      min-width: 120px;
+      height: auto;
+    }
+
+    header h1 {
+      margin: 10px 0 0 0;
+      font-size: 1.4em;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .menu-button {
+      background-color: #000;
+      border: 3px solid #f36c21;
+      color: white;
+      font-size: 1.2em;
+      font-weight: 600;
+      padding: 18px 10px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 380px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      cursor: pointer;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .menu-button:hover {
+      background-color: #222;
+      transform: scale(1.03);
+    }
+
+    .menu-button i {
+      font-size: 1.6em;
+      color: white;
+    }
+
+    footer {
+      background-color: #000;
+      color: #f36c21;
+      font-size: 0.9em;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+
+  <!-- Iconos Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo Club Deportivo La Magdalena">
+    <h1>CLUB DEPORTIVO LA MAGDALENA</h1>
+  </header>
+
+  <div class="menu">
+    <button class="menu-button" onclick="window.open('https://sites.google.com/view/aplicacioncdlm/noticias', '_blank')">
+      <i class="fas fa-newspaper"></i> NOTICIAS
+    </button>
+
+    <button class="menu-button" onclick="window.open('https://sites.google.com/view/aplicacioncdlm/patrocinadores', '_blank')">
+      <i class="fas fa-handshake"></i> PATROCINADORES
+    </button>
+
+    <button class="menu-button" onclick="window.open('https://sites.google.com/view/aplicacioncdlm/equipos', '_blank')">
+      <i class="fas fa-futbol"></i> EQUIPOS
+    </button>
+
+    <button class="menu-button" onclick="window.open('https://sites.google.com/view/aplicacioncdlm/resultados', '_blank')">
+      <i class="fas fa-chart-bar"></i> RESULTADOS
+    </button>
+
+    <button class="menu-button" onclick="window.open('https://sites.google.com/view/aplicacioncdlm/partidos', '_blank')">
+      <i class="fas fa-calendar-alt"></i> PARTIDOS SEMANA
+    </button>
+
+    <button class="menu-button" onclick="window.open('https://sites.google.com/view/aplicacioncdlm/galer%C3%ADa', '_blank')">
+      <i class="fas fa-camera"></i> GALERÍA
+    </button>
+  </div>
+
+  <footer>
+    Área de Informática
+  </footer>
+
+  <!-- Registro del Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+
+</body>
+</html>
