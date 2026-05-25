@@ -17,6 +17,19 @@
       color: white;
       text-align: center;
     }
+
+    header {
+      padding: 25px 0 10px 0;
+    }
+
+    header img {
+      width: 35vw;
+      max-width: 200px;
+      min-width: 120px;
+      height: auto;
+    }
+
+    /* ⭐ ESTILO NUEVO DEL NOMBRE DEL CLUB ⭐ */
     .club-name {
         text-align: center;
         margin-top: 10px;
@@ -43,7 +56,8 @@
         background-color: white;
         border-radius: 2px;
     }
-    }
+
+    /* ⭐ FIN DEL ESTILO NUEVO ⭐ */
 
     .menu {
       display: flex;
@@ -101,20 +115,21 @@
 
   <header>
     <img src="logo.png" alt="Logo Club Deportivo La Magdalena">
-   <div class="club-name">
-    <span class="linea1">CLUB DEPORTIVO</span><br>
-    <span class="linea2">LA MAGDALENA</span>
-    <div class="subrayado"></div>
-</div>
+
+    <!-- ⭐ BLOQUE NUEVO DEL NOMBRE DEL CLUB ⭐ -->
+    <div class="club-name">
+        <span class="linea1">CLUB DEPORTIVO</span><br>
+        <span class="linea2">LA MAGDALENA</span>
+        <div class="subrayado"></div>
+    </div>
+    <!-- ⭐ FIN BLOQUE ⭐ -->
 
   </header>
 
   <div class="menu">
-<button class="menu-button" onclick="window.location.href='noticias.html'">NOTICIAS</button>
 
-
-
-
+    <button class="menu-button" onclick="window.location.href='noticias.html'">
+      <i class="fas fa-newspaper"></i> NOTICIAS
     </button>
 
     <button class="menu-button" onclick="window.open('https://sites.google.com/view/aplicacioncdlm/patrocinadores', '_blank')">
@@ -136,6 +151,7 @@
     <button class="menu-button" onclick="window.open('https://sites.google.com/view/aplicacioncdlm/galer%C3%ADa', '_blank')">
       <i class="fas fa-camera"></i> GALERÍA
     </button>
+
   </div>
 
   <footer>
@@ -151,3 +167,4 @@
 
 </body>
 </html>
+
